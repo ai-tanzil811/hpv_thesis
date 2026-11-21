@@ -1,0 +1,88 @@
+\chapter{Methodology}
+
+\section{Study Design and Setting}
+A cross-sectional survey was conducted among female university students in Dhaka, Bangladesh.
+Data were collected from 7 September to 29 October 2026.
+The institution was recorded for 144 of the 231 respondents because this question was absent from earlier versions of the form: University of Asia Pacific ($n=87$), Bangladesh University of Textiles ($n=40$), University of Dhaka ($n=14$), Southeast University ($n=1$) and two entries with unclear institution names. \confirm{the institution question is blank for 87 respondents; check whether they came from the same universities}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[font=\small,node distance=9mm,
+ box/.style={draw,rounded corners=2pt,align=center,minimum height=9mm,text width=4.6cm,fill=white},
+ big/.style={box,text width=5.6cm},
+ arr/.style={-{Stealth[length=2.2mm]},thick}]
+\node[big] (all) {Female students who completed the survey\\ $N=231$};
+\node[big,below=of all] (out) {Classifiable acceptance outcome\\ $n=229$};
+\node[box,right=14mm of out,text width=3.6cm,draw=gray] (ex) {Excluded from outcome analysis: unvaccinated, no intention given ($n=2$)};
+\node[box,below left=10mm and -2mm of out,draw=accentblue,fill=accentblue!8] (acc) {Accepting\\ $n=184$ (80.3\%)};
+\node[box,below right=10mm and -2mm of out,draw=accentorange,fill=accentorange!8] (non) {Not accepting\\ $n=45$ (19.7\%)};
+\node[big,below=28mm of out] (an) {Descriptive analysis, bivariate tests and logistic regression\\ (complete-case: $n=225$)};
+\draw[arr] (all)--(out);\draw[arr] (out)--(ex);\draw[arr] (out)--(acc);\draw[arr] (out)--(non);
+\draw[arr] (acc)--++(0,-1.2)-|(an.north);\draw[arr] (non)--++(0,-1.2)-|(an.north);
+\end{tikzpicture}
+\caption{Flow of respondents and analysis.}\label{fig:flow}
+\end{figure}
+% TODO: Confirm the institution entries and the reason for missing institution data.
+
+\section{Study Population and Sampling}
+% TODO: Confirm the sampling method, recruitment procedure and whether a sample-size calculation was performed.
+The target population was female undergraduate and postgraduate students of universities in Dhaka. Participants were recruited by convenience sampling, and the survey was open to students of all academic fields. \confirm{sampling method and how respondents were approached; sample size calculation if one was done} Students who did not agree to take part were not surveyed. Respondents were grouped into \emph{healthcare students} (medicine, health sciences, pharmacy and nursing; $n=95$) and \emph{non-healthcare students} (engineering and technology, science, arts and humanities, commerce and other fields; $n=136$).
+
+\section{Study Instrument}
+% TODO: Confirm the pilot sample size and document all wording changes made after pilot testing.
+A structured, self-administered questionnaire was developed after reviewing the HPV literature. It was pilot tested on a small group of female university students to check clarity, flow and completion time, and the wording was refined afterwards. \confirm{pilot sample size and what changed} The questionnaire (Appendix~A) had the following parts:
+\begin{enumerate}[itemsep=0pt]
+\item informed consent and socio-demographic details (age, institution, level and field of study, residence, parents' education, prior education on sexually transmitted infections);
+\item 15 knowledge statements, with the response options true, false and not sure;
+\item prior awareness of HPV, sources of first information and self-rated knowledge;
+\item 10 attitude statements on a five-point Likert scale;
+\item vaccination status, reasons for not being vaccinated, intention to be vaccinated, and the effect of a provider's recommendation;
+\item eight perceived barriers rated on a five-point scale;
+\item views on institutional programmes, motivating factors, social context (taboo, parental discussion), and an open question on government action.
+\end{enumerate}
+
+\section{Data Collection and Management}
+% TODO: Confirm whether printed forms were entered into KoboToolbox or whether the survey used an online link.
+Participants were informed about the purpose of the study, the confidentiality of their answers and their right to withdraw. Responses were recorded through KoboToolbox and exported to Excel for cleaning and coding. \confirm{mode of data collection: printed forms entered into KoboToolbox, or online link} No personal identifiers were used in the analysis.
+
+\section{Ethical Considerations}
+% TODO: Add the approving body, reference number and approval date; retain the approval letter in Appendix~B.
+Participation was voluntary and anonymous, and all respondents gave consent before answering. \fbox{\parbox{0.92\textwidth}{\small\color{red}\textbf{Ethical approval required:} Insert the approving body, reference number and approval date.}}
+
+\section{Variables and Measures}
+\subsection{Outcome: acceptance of HPV vaccination}
+Acceptance was a binary outcome. A student was classed as \emph{accepting} if she had received at least one HPV vaccine dose (``Yes, all doses completed'' or ``Yes, partially vaccinated'') or if, when not vaccinated or unsure of her status, she said she was ``likely'' or ``very likely'' to receive the vaccine in future. She was classed as \emph{not accepting} if she was not vaccinated and answered ``uncertain'' or ``very unlikely''. Two unvaccinated students who skipped the intention question were excluded from the outcome analysis ($n=229$). Students who were unsure whether they had been vaccinated were classified by their stated intention.
+
+\subsection{Knowledge score}
+Each of the 15 statements was scored 1 if answered correctly and 0 if answered incorrectly, ``not sure'' or left blank. Two statements are false (K7, menstrual problems; K12, protection against all strains) and were reverse keyed. The total score ranges from 0 to 15. Using Bloom's cut-offs, knowledge was classed as good ($\geq$80\%, 12--15), moderate (50--79\%, 8--11) or poor ($<$50\%, 0--7). Internal consistency was good (KR-20 = 0.828).
+
+\subsection{Attitude score}
+The 10 attitude items were scored from 1 (strongly disagree) to 5 (strongly agree), giving a total of 10--50 (Cronbach's $\alpha$ = 0.823). Respondents who skipped some items had the missing values replaced by their own mean item score. Attitude was classed as positive ($\geq$80\%, 40--50), neutral (60--79\%, 30--39) or negative ($<$60\%, below 30).
+
+\subsection{Perceived barriers}
+% TODO: Confirm the questionnaire scale anchors for the perceived-barrier items.
+Eight possible barriers (Table~\ref{tab:barriers}) were rated from 1 to 5, with higher values meaning that the respondent saw the factor as a greater barrier \confirm{scale anchors used on the questionnaire}. Internal consistency was good ($\alpha$ = 0.849).
+
+\subsection{Explanatory variables}
+Explanatory variables were age (years), academic stream (healthcare or not), parents' education (university or not), prior education on sexually transmitted infections (any or none/unsure), having heard of HPV before the survey, parental discussion of HPV (any or never/unsure), whether discussing HPV is regarded as taboo, whether the university had provided an HPV awareness programme, and the knowledge and attitude scores.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[font=\small,node distance=8mm,
+ box/.style={draw,rounded corners=2pt,align=center,text width=4.3cm,minimum height=8mm,fill=white},
+ arr/.style={-{Stealth[length=2.2mm]},thick}]
+\node[box] (a) {Socio-demographic factors\\ {\footnotesize age, field of study, parents' education}};
+\node[box,below=of a] (b) {Prior exposure\\ {\footnotesize STI education, heard of HPV, parental discussion}};
+\node[box,below=of b] (c) {Knowledge and attitude\\ {\footnotesize knowledge score, attitude score}};
+\node[box,right=26mm of b,draw=accentblue,fill=accentblue!8,text width=3.6cm] (o) {\textbf{Acceptance of HPV vaccination}\\ {\footnotesize vaccinated or likely to be}};
+\node[box,above=of o,text width=3.6cm,draw=gray] (s) {Context\\ {\footnotesize taboo, university programme}};
+\draw[arr] (a)--(o);\draw[arr] (b)--(o);\draw[arr] (c)--(o);\draw[arr] (s)--(o);
+\end{tikzpicture}
+\caption{Conceptual framework of the study.}\label{fig:framework}
+\end{figure}
+\FloatBarrier
+
+\section{Statistical Analysis}
+Data were cleaned, coded and analysed in Python (pandas, SciPy and statsmodels), and figures were drawn with matplotlib. Categorical variables were summarised as counts and percentages and continuous variables as mean $\pm$ standard deviation, or median and interquartile range for skewed scores. Knowledge and attitude scores were not normally distributed, so the Mann--Whitney $U$ test was used to compare two groups. Proportions were compared with Pearson's chi-square test, or Fisher's exact test when a $2\times2$ table had an expected count below 5. The relationship between knowledge and attitude scores was measured with Spearman's rank correlation.
+
+Factors associated with acceptance were examined with logistic regression. Because only 45 students were classed as not accepting, the number of predictors was limited to protect the stability of the estimates. Variables were chosen before analysis on the basis of the conceptual framework. Model 1 included age, academic stream, parents' education, prior STI education, having heard of HPV, parental discussion and knowledge score. Model 2 added attitude score, which is conceptually close to acceptance and was therefore analysed separately. Results are given as odds ratios (OR) and adjusted odds ratios (AOR) with 95\% confidence intervals. Model fit was described with Nagelkerke $R^2$ and the area under the ROC curve, and collinearity was checked with variance inflation factors (all below 1.3). As a sensitivity analysis, Model 2 was repeated among unvaccinated or unsure students only, using intention as the outcome. A two-sided $p<0.05$ was considered statistically significant. No adjustment was made for multiple comparisons, so the bivariate tests should be read as exploratory.

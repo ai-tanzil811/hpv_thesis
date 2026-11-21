@@ -1,0 +1,23 @@
+\begin{table}[htbp]\centering\footnotesize
+\caption{Logistic regression of factors associated with acceptance of HPV vaccination.}\label{tab:logistic}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X cc cc cc@{}}\toprule
+ & \multicolumn{2}{c}{Unadjusted} & \multicolumn{2}{c}{Model 1} & \multicolumn{2}{c}{Model 2} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Variable & OR (95\% CI) & $p$ & AOR (95\% CI) & $p$ & AOR (95\% CI) & $p$ \\\midrule
+Age (per year) & 1.15 (0.93--1.43) & 0.203 & 1.16 (0.91--1.47) & 0.236 & 1.20 (0.94--1.53) & 0.150 \\
+Healthcare stream (vs non-healthcare) & 0.94 (0.49--1.82) & 0.858 & 0.67 (0.30--1.49) & 0.327 & 0.64 (0.28--1.43) & 0.271 \\
+Parent with university education (vs not) & 1.12 (0.53--2.34) & 0.773 & 1.06 (0.49--2.32) & 0.879 & 1.07 (0.49--2.35) & 0.863 \\
+Prior STI education (vs none/unsure) & 1.16 (0.61--2.24) & 0.648 & 1.02 (0.49--2.09) & 0.966 & 1.06 (0.51--2.20) & 0.866 \\
+Had heard of HPV (vs not) & 3.32 (1.61--6.86) & 0.001 & 3.14 (1.38--7.16) & 0.006 & 3.31 (1.44--7.61) & 0.005 \\
+Parents discussed HPV (vs never/unsure) & 1.57 (0.76--3.25) & 0.220 & 1.16 (0.53--2.53) & 0.717 & 1.16 (0.52--2.56) & 0.715 \\
+Knowledge score (per point) & 1.13 (1.02--1.24) & 0.017 & 1.09 (0.97--1.21) & 0.138 & 1.06 (0.95--1.18) & 0.322 \\
+Attitude score (per point) & 1.08 (1.01--1.16) & 0.026 & -- & -- & 1.08 (1.00--1.17) & 0.048 \\
+\midrule
+$n$ analysed (accepting) & \multicolumn{2}{c}{--} & \multicolumn{2}{c}{225 (181)} & \multicolumn{2}{c}{225 (181)} \\
+Nagelkerke $R^2$ & \multicolumn{2}{c}{--} & \multicolumn{2}{c}{0.107} & \multicolumn{2}{c}{0.132} \\
+AUC & \multicolumn{2}{c}{--} & \multicolumn{2}{c}{0.673} & \multicolumn{2}{c}{0.703} \\
+\bottomrule\end{tabularx}
+
+\vspace{2pt}\raggedright\scriptsize OR = odds ratio; AOR = adjusted odds ratio; CI = confidence interval. Outcome: accepting (1) vs not accepting (0). Model 1 includes socio-demographic variables, prior awareness and knowledge score; Model 2 additionally adjusts for attitude score. Respondents with missing data on any model variable were excluded.
+\end{table}
